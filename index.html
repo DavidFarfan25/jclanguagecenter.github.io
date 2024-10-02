@@ -28,6 +28,7 @@
             <td>
     <section class="form-contact">
         <h4>CONTÁCTAME</h4>
+        <form id="contactForm">
         <input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombres">
         <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
         <input class="controls" type="email" name="email" id="email" placeholder="Correo">
@@ -38,7 +39,13 @@
         <label for="privacidad">He leído y acepto las <a href="#">Políticas de Privacidad</a>.</label>
         </p>
         <input class="button" type="submit" value="Enviar">
-    </section> 
+        </form>
+        <p id="errorMessage" style="display: none;">
+            Debe completar el formulario primero.
+        </p>
+        <p id="thankYouMessage" style="display: none;">
+            Gracias por la confianza! Me comunicaré pronto contigo.
+    </section>
 </td>
     </tr>
 </table>
@@ -175,8 +182,6 @@
     <button class="close-btn" onclick="ocultarCuadro('popupBeginners')">Cerrar</button>
 </div>
 
-<script src="script.js"></script>
-
 </div>
 
 <div class="wsp-icon">
@@ -187,6 +192,9 @@
 <div class="resena">
     <h2>Reseñas</h2>
 </div>
+
+<script src="script.js"></script>
+
 </body>
 
 <footer class="footer">
