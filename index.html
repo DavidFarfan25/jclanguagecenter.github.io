@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <title>JC Language Center</title>
+</head>
+
+<header class="header">
+<h1>JC Language Center</h1>
+</header>
+
+<body>
+    <table class="tabla1">
+        <tr>
+            <td>
+    <img src="modelo.png">
+            </td>
+            <td>
+    <section class="form-contact">
+        <h4>CONTÁCTAME</h4>
+        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombres">
+        <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
+        <input class="controls" type="email" name="email" id="email" placeholder="Correo">
+        <input class="controls" type="text" name="numero" id="numero" placeholder="Numero Telefonico">
+        <input class="control" type="text" name="mensaje" id="mensaje" placeholder="Mensaje">
+        <p>
+        <input class="controls" type="checkbox" name="privacidad" id="privacidad">
+        <label for="privacidad">He leído y acepto las <a href="#">Políticas de Privacidad</a>.</label>
+        </p>
+        <input class="button" type="submit" value="Enviar">
+    </section> 
+</td>
+    </tr>
+</table>
+
+<div class="container">
+        <h2>¿Qué ofrecemos?</h2>
+    <table class="table">
+        <tr>
+            <td>
+            <div class="benefit">
+            <h3>Métodos Innovadores</h3>
+            <ul>
+                <li>Clases interactivas y dinámicas</li>
+                <li>Uso de tecnologías avanzadas</li>
+                <li>Enfoque en comunicación y comprensión</li>
+                <li>Adaptadas a todos los estilos de aprendizaje</li>
+            </ul>
+            </div>
+            </td>
+            <td>
+        <div class="benefit">
+            <h3>Clases Flexibles</h3>
+            <ul>
+                <li>Clases en vivo por Zoom</li>
+                <li>Grabaciones de cada sesión para repasar</li>
+                <li>Opcion de clases individuales o grupales</li>
+            </ul>
+        </div>
+            </td>
+            <td>
+        <div class="benefit">
+            <h3>Material Exclusivo</h3>
+            <ul>
+                <li>Guías y ejercicios personalizados</li>
+                <li>Material descargable para estudio autónomo</li>
+                <li>Recursos audiovisuales y prácticos</li>
+                <li>Acceso a contenido actualizado constantemente</li>
+            </ul>
+        </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+        <div class="benefit">
+            <h3>Programas Personalizados</h3>
+            <ul>
+                <li>Evaluación inicial para determinar el nivel</li>
+                <li>Plan de estudio adaptado a tus objetivos</li>
+                <li>Seguimiento y retroalimentación constante</li>
+                <li>Oportunidades de progreso rápido</li>
+            </ul>
+        </div>
+        <td>
+        <div class="benefit">
+            <h3>Beneficios Adicionales</h3>
+            <ul>
+                <li>Talleres exclusivos para alumnos</li>
+                <li>Comunidades de práctica y networking</li>
+                <li>Acompañamiento personalizado durante el proceso</li>
+                <li>Precios accesibles con promociones especiales</li>
+            </ul>
+        </div>
+            </td>
+            <td>
+                <div class="benefit">
+                    <h3>Ambiente Positivo</h3>
+                    <ul>
+                        <li>Clases en un entorno amigable y motivador</li>
+                        <li>Clases en un entorno amigable y motivador</li>
+                        <li>Espacio para expresar y compartir dudas sin miedo</li>
+                        <li>Actividades recreativas y juegos para mejorar la fluidez</li>
+                    </ul>
+                </div>
+        </tr> 
+    </table>
+</div>
+
+<div class="niveles">
+    <h2>Niveles</h2>
+    <ul class="tabla">
+        <li class="nivel children" onclick="mostrarCuadro('popupChildren')">
+            <div class="image"></div>
+            <span>CHILDREN</span>
+        </li>
+        <li class="nivel junior" onclick="mostrarCuadro('popupJuniors')">
+            <div class="image"></div>
+            <span>JUNIORS</span>
+        </li>
+        <li class="nivel beginners" onclick="mostrarCuadro('popupBeginners')">
+            <div class="image"></div>
+            <span>BEGINNERS</span>
+        </li>
+    </ul>
+</div>
+            
+<div id="overlay" class="overlay"></div>
+
+<div id="popupChildren" class="popup">
+    <h2>Children Level</h2>
+    <p><b>Edad Sugerida:</b> 4 a 10 años</p>
+    <p><b>Dirigido a:</b> Niños curiosos que deseen aprender un nuevo idioma de manera divertida.</p>
+    <p><b>Objetivos:</b></p>
+        <ul class="objetives">
+            <li>Desarrollar habilidades lingüísticas básicas.</li>
+            <li>Fomentar la confianza y la curiosidad.</li>
+            <li>Aprender a través de juegos y actividades interactivas.</li>
+        </ul>
+    <button class="close-btn" onclick="ocultarCuadro('popupChildren')">Cerrar</button>
+</div>
+
+<div id="popupJuniors" class="popup">
+    <h2>Juniors Level</h2>
+    <p><b>Edad Sugerida:</b> 11 a 15 años</p>
+    <p><b>Dirigido a:</b> Adolescentes que buscan mejorar sus habilidades lingüísticas y comunicarse con confianza.</p>
+    <p><b>Objetivos:</b></p>
+        <ul class="objetives">
+            <li>Ampliar vocabulario y gramática en un contexto práctico.</li>
+            <li>Fomentar la interacción a través de actividades grupales.</li>
+            <li>Desarrollar habilidades de conversación en situaciones reales.</li>
+        </ul>
+    <button class="close-btn" onclick="ocultarCuadro('popupJuniors')">Cerrar</button>
+</div>
+
+<div id="popupBeginners" class="popup">
+    <h2>Beginners Level</h2>
+    <p><b>Edad Sugerida:</b> 16 años en adelante</p>
+    <p><b>Dirigido a:</b> Adultos y jóvenes que comienzan su viaje en el aprendizaje de un nuevo idioma.</p>
+    <p><b>Objetivos:</b></p>
+        <ul class="objetives">
+            <li>Aprender las bases del idioma, incluyendo vocabulario y gramática esencial.</li>
+            <li>Desarrollar la confianza para comunicarse en situaciones cotidianas.</li>
+            <li>Proporcionar un entorno de aprendizaje amigable y motivador.</li>
+        </ul>
+    <button class="close-btn" onclick="ocultarCuadro('popupBeginners')">Cerrar</button>
+</div>
+
+<script src="script.js"></script>
+
+</div>
+
+<div class="wsp-icon">
+    <a href="https://api.whatsapp.com/send?phone=51936823652&text=Hola%2C%20quiero%20informacion%20sobre%20JC%20Language%20Center!🤗" target="_blank">
+    <img src="image.png"></a>
+</div>
+
+<div class="resena">
+    <h2>Reseñas</h2>
+</div>
+</body>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-row">
+            <div class="footer-links">
+                <h3>Contactanos</h3>
+                    <ul>
+                        <li><a href="ModaXpress@gmail.com">Email</a></li>
+                        <li><a href="tel:+51987654321">Llámanos</a></li>
+                    </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Síguenos</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/#####">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/#####">Instagram</a></li>
+                        <li><a href="https://www.twitter.com/#####">Twitter</a></li>
+                        <li><a href="https://www.tiktok.com/#####">TikTok</a></li>
+                    </ul>
+            </div>
+        </div>       
+    </div>       
+</footer>
+</html>
