@@ -1,12 +1,13 @@
 /* General Styles */
-body {
+body{
+    overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f9;
     color: #333;
-    overflow-x: hidden;
 }
+
 
 /* Header */
 .header {
@@ -34,8 +35,8 @@ body {
 }
 
 .tabla1 img{
-height: 600px;
-margin: 0;
+height: auto;
+max-width: 100%;
 }
 
 .tabla1 td{
@@ -153,12 +154,13 @@ input.controls[type="checkbox"] {
 
 .table {
     font-family: "Playwrite DE Grund";
-    width: 100%;
-    max-width: 1200px;
+    width: 80%;
+    max-width: 100%;
     display: table;
     table-layout: fixed;
     border-spacing: 30px;
     align-items: center;
+    height: auto;
 }
 
 .table td {
@@ -182,7 +184,6 @@ input.controls[type="checkbox"] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    float: left;
 }
 
 .benefit{
@@ -231,6 +232,7 @@ input.controls[type="checkbox"] {
 .niveles ul {
     list-style-type: none; 
     padding: 0; 
+    flex-wrap: wrap;
     display: flex; 
     justify-content: center; 
     margin: 50px 0; 
@@ -267,15 +269,15 @@ input.controls[type="checkbox"] {
 }
 
 .children .image {
-    background-image: url('img/children.avif'); 
+    background-image: url('children.avif'); 
 }
 
 .junior .image {
-    background-image: url('img/juniors.jpg'); 
+    background-image: url('juniors.jpg'); 
 }
 
 .beginners .image {
-    background-image: url('img/beginners.avif'); 
+    background-image: url('beginners.avif'); 
 }
 
 .nivel:hover .image {
