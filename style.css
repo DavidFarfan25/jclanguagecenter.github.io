@@ -266,15 +266,15 @@ input.controls[type="checkbox"] {
 }
 
 .children .image {
-    background-image: url('children.avif'); 
+    background-image: url('img/children.avif'); 
 }
 
 .junior .image {
-    background-image: url('juniors.jpg'); 
+    background-image: url('img/juniors.jpg'); 
 }
 
 .beginners .image {
-    background-image: url('beginners.avif'); 
+    background-image: url('img/beginners.avif'); 
 }
 
 .nivel:hover .image {
