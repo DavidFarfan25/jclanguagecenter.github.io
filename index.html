@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="scrollreveal.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,11 +20,21 @@
 <h1>JC Language Center</h1>
 </header>
 
+<nav class="navbar">
+  <ul>
+    <li><a href="#tabla1" class="scroll-link">Contáctanos</a></li>
+    <li><a href="#offer" class="scroll-link">¿Qué ofrecemos?</a></li>
+    <li><a href="#niveles" class="scroll-link">Niveles</a></li>
+    <li><a href="#resena" class="scroll-link">Reseñas</a></li>
+  </ul>
+    <script src="script.js"></script> 
+</nav>
+
 <body>
-    <table class="tabla1">
+    <table class="tabla1" id="tabla1">
         <tr>
             <td>
-    <img src="img/modelo.png">
+    <img src="img/f1704153-e056-4911-9f45-bd0691a52bce.jpeg">
             </td>
             <td>
     <section class="form-contact">
@@ -51,7 +61,7 @@
     </tr>
 </table>
 
-<div class="container">
+<div class="container" id="offer">
         <h2>¿Qué ofrecemos?</h2>
     <table class="table">
         <tr>
@@ -59,10 +69,10 @@
             <div class="benefit">
             <h3>Métodos Innovadores</h3>
             <ul>
-                <li>Clases interactivas y dinámicas</li>
-                <li>Uso de tecnologías avanzadas</li>
-                <li>Enfoque en comunicación y comprensión</li>
-                <li>Adaptadas a todos los estilos de aprendizaje</li>
+                <li>Clases dinámicas</li>
+                <li>Uso de tecnología avanzada</li>
+                <li>Enfoque comunicativo</li>
+                <li>Adaptadao a todos los estilos</li>
             </ul>
             </div>
             </td>
@@ -71,8 +81,9 @@
             <h3>Clases Flexibles</h3>
             <ul>
                 <li>Clases en vivo por Zoom</li>
-                <li>Grabaciones de cada sesión para repasar</li>
-                <li>Opcion de clases individuales o grupales</li>
+                <li>Grabaciones de cada sesión</li>
+                <li>Clases individuales o grupales</li>
+                <li>Horarios flexibles</li>
             </ul>
         </div>
             </td>
@@ -81,9 +92,9 @@
             <h3>Material Exclusivo</h3>
             <ul>
                 <li>Guías y ejercicios personalizados</li>
-                <li>Material descargable para estudio autónomo</li>
-                <li>Recursos audiovisuales y prácticos</li>
-                <li>Acceso a contenido actualizado constantemente</li>
+                <li>Material descargable para estudiar</li>
+                <li>Recursos audiovisuales</li>
+                <li>Contenido siempre actualizado</li>
             </ul>
         </div>
             </td>
@@ -93,9 +104,9 @@
         <div class="benefit">
             <h3>Programas Personalizados</h3>
             <ul>
-                <li>Evaluación inicial para determinar el nivel</li>
-                <li>Plan de estudio adaptado a tus objetivos</li>
-                <li>Seguimiento y retroalimentación constante</li>
+                <li>Evaluación inicial del nivel</li>
+                <li>Plan de estudio adaptado</li>
+                <li>Seguimiento constante</li>
                 <li>Oportunidades de progreso rápido</li>
             </ul>
         </div>
@@ -103,10 +114,10 @@
         <div class="benefit">
             <h3>Beneficios Adicionales</h3>
             <ul>
-                <li>Talleres exclusivos para alumnos</li>
-                <li>Comunidades de práctica y networking</li>
-                <li>Acompañamiento personalizado durante el proceso</li>
-                <li>Precios accesibles con promociones especiales</li>
+                <li>Talleres exclusivos</li>
+                <li>Comunidades de práctica</li>
+                <li>Acompañamiento personalizado</li>
+                <li>Precios accesibles y promociones</li>
             </ul>
         </div>
             </td>
@@ -114,17 +125,17 @@
                 <div class="benefit">
                     <h3>Ambiente Positivo</h3>
                     <ul>
-                        <li>Clases en un entorno amigable y motivador</li>
-                        <li>Clases en un entorno amigable y motivador</li>
-                        <li>Espacio para expresar y compartir dudas sin miedo</li>
-                        <li>Actividades recreativas y juegos para mejorar la fluidez</li>
+                        <li>Fomento de confianza y participación</li>
+                        <li>Entorno amigable y motivador</li>
+                        <li>Espacio para expresar dudas</li>
+                        <li>Actividades recreativas y juegos</li>
                     </ul>
                 </div>
         </tr> 
     </table>
 </div>
 
-<div class="niveles">
+<div class="niveles" id="niveles">
     <h2>Niveles</h2>
     <ul class="tabla">
         <li class="nivel children" onclick="mostrarCuadro('popupChildren')">
@@ -190,36 +201,45 @@
     <img src="img/image.png"></a>
 </div>
 
-<div class="resena">
+<div class="resena" id="resena">
     <h2>Reseñas</h2>
 </div>
 
 </div>
 <script src="script.js"></script>
 <script src="index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 
 </body>
 
 <footer class="footer">
-    <div class="footer-container">
-        <div class="footer-row">
-            <div class="footer-links">
-                <h3>Contactanos</h3>
-                    <ul>
-                        <li><a href="ModaXpress@gmail.com">Email</a></li>
-                        <li><a href="tel:+51987654321">Llámanos</a></li>
-                    </ul>
-            </div>
-            <div class="footer-links">
-                <h3>Síguenos</h3>
-                    <ul>
-                        <li><a href="https://www.facebook.com/#####">Facebook</a></li>
-                        <li><a href="https://www.instagram.com/#####">Instagram</a></li>
-                        <li><a href="https://www.twitter.com/#####">Twitter</a></li>
-                        <li><a href="https://www.tiktok.com/#####">TikTok</a></li>
-                    </ul>
-            </div>
-        </div>       
-    </div>       
+  <p class="slogan">Practice makes perfect!</p>
+  <p > &copy; 2024 JC Language Institute. Todos los derechos reservados.</p>
 </footer>
 </html>
