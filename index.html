@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scrollreveal.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <title>JC Language Center</title>
+</head>
+
+<header class="header">
+<h1>JC Language Center</h1>
+</header>
+
+<nav class="navbar">
+  <ul>
+    <li><a href="#tabla1" class="scroll-link">Contáctanos</a></li>
+    <li><a href="#offer" class="scroll-link">¿Qué ofrecemos?</a></li>
+    <li><a href="#niveles" class="scroll-link">Niveles</a></li>
+    <li><a href="#resena" class="scroll-link">Reseñas</a></li>
+  </ul>
+    <script src="script.js"></script> 
+</nav>
+
+<body>
+    <table class="tabla1" id="tabla1">
+        <tr>
+            <td>
+    <img src="img/f1704153-e056-4911-9f45-bd0691a52bce.jpeg">
+            </td>
+            <td>
+    <section class="form-contact">
+        <h4>CONTÁCTAME</h4>
+        <form id="contactForm">
+        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombres">
+        <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
+        <input class="controls" type="email" name="email" id="email" placeholder="Correo">
+        <input class="controls" type="text" name="numero" id="numero" placeholder="Numero Telefonico">
+        <input class="control" type="text" name="mensaje" id="mensaje" placeholder="Mensaje">
+        <p>
+        <input class="controls" type="checkbox" name="privacidad" id="privacidad">
+        <label for="privacidad">He leído y acepto las <a href="#">Políticas de Privacidad</a>.</label>
+        </p>
+        <input class="button" type="submit" value="Enviar">
+        </form>
+        <p id="errorMessage" style="display: none;">
+            Debe completar el formulario primero.
+        </p>
+        <p id="thankYouMessage" style="display: none;">
+            Gracias por la confianza! Me comunicaré pronto contigo.
+    </section>
+</td>
+    </tr>
+</table>
+
+<div class="container" id="offer">
+        <h2>¿Qué ofrecemos?</h2>
+    <table class="table">
+        <tr>
+            <td>
+            <div class="benefit">
+            <h3>Métodos Innovadores</h3>
+            <ul>
+                <li>Clases dinámicas</li>
+                <li>Uso de tecnología avanzada</li>
+                <li>Enfoque comunicativo</li>
+                <li>Adaptadao a todos los estilos</li>
+            </ul>
+            </div>
+            </td>
+            <td>
+        <div class="benefit">
+            <h3>Clases Flexibles</h3>
+            <ul>
+                <li>Clases en vivo por Zoom</li>
+                <li>Grabaciones de cada sesión</li>
+                <li>Clases individuales o grupales</li>
+                <li>Horarios flexibles</li>
+            </ul>
+        </div>
+            </td>
+            <td>
+        <div class="benefit">
+            <h3>Material Exclusivo</h3>
+            <ul>
+                <li>Guías y ejercicios personalizados</li>
+                <li>Material descargable para estudiar</li>
+                <li>Recursos audiovisuales</li>
+                <li>Contenido siempre actualizado</li>
+            </ul>
+        </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+        <div class="benefit">
+            <h3>Programas Personalizados</h3>
+            <ul>
+                <li>Evaluación inicial del nivel</li>
+                <li>Plan de estudio adaptado</li>
+                <li>Seguimiento constante</li>
+                <li>Oportunidades de progreso rápido</li>
+            </ul>
+        </div>
+        <td>
+        <div class="benefit">
+            <h3>Beneficios Adicionales</h3>
+            <ul>
+                <li>Talleres exclusivos</li>
+                <li>Comunidades de práctica</li>
+                <li>Acompañamiento personalizado</li>
+                <li>Precios accesibles y promociones</li>
+            </ul>
+        </div>
+            </td>
+            <td>
+                <div class="benefit">
+                    <h3>Ambiente Positivo</h3>
+                    <ul>
+                        <li>Fomento de confianza y participación</li>
+                        <li>Entorno amigable y motivador</li>
+                        <li>Espacio para expresar dudas</li>
+                        <li>Actividades recreativas y juegos</li>
+                    </ul>
+                </div>
+        </tr> 
+    </table>
+</div>
+
+<div class="niveles" id="niveles">
+    <h2>Niveles</h2>
+    <ul class="tabla">
+        <li class="nivel children" onclick="mostrarCuadro('popupChildren')">
+            <div class="image"></div>
+            <span>CHILDREN</span>
+        </li>
+        <li class="nivel junior" onclick="mostrarCuadro('popupJuniors')">
+            <div class="image"></div>
+            <span>JUNIORS</span>
+        </li>
+        <li class="nivel beginners" onclick="mostrarCuadro('popupBeginners')">
+            <div class="image"></div>
+            <span>BEGINNERS</span>
+        </li>
+    </ul>
+</div>
+            
+<div id="overlay" class="overlay"></div>
+
+<div id="popupChildren" class="popup">
+    <h2>Children Level</h2>
+    <p><b>Edad Sugerida:</b> 4 a 10 años</p>
+    <p><b>Dirigido a:</b> Niños curiosos que deseen aprender un nuevo idioma de manera divertida.</p>
+    <p><b>Objetivos:</b></p>
+        <ul class="objetives">
+            <li>Desarrollar habilidades lingüísticas básicas.</li>
+            <li>Fomentar la confianza y la curiosidad.</li>
+            <li>Aprender a través de juegos y actividades interactivas.</li>
+        </ul>
+    <button class="close-btn" onclick="ocultarCuadro('popupChildren')">Cerrar</button>
+</div>
+
+<div id="popupJuniors" class="popup">
+    <h2>Juniors Level</h2>
+    <p><b>Edad Sugerida:</b> 11 a 15 años</p>
+    <p><b>Dirigido a:</b> Adolescentes que buscan mejorar sus habilidades lingüísticas y comunicarse con confianza.</p>
+    <p><b>Objetivos:</b></p>
+        <ul class="objetives">
+            <li>Ampliar vocabulario y gramática en un contexto práctico.</li>
+            <li>Fomentar la interacción a través de actividades grupales.</li>
+            <li>Desarrollar habilidades de conversación en situaciones reales.</li>
+        </ul>
+    <button class="close-btn" onclick="ocultarCuadro('popupJuniors')">Cerrar</button>
+</div>
+
+<div id="popupBeginners" class="popup">
+    <h2>Beginners Level</h2>
+    <p><b>Edad Sugerida:</b> 16 años en adelante</p>
+    <p><b>Dirigido a:</b> Adultos y jóvenes que comienzan su viaje en el aprendizaje de un nuevo idioma.</p>
+    <p><b>Objetivos:</b></p>
+        <ul class="objetives">
+            <li>Aprender las bases del idioma, incluyendo vocabulario y gramática esencial.</li>
+            <li>Desarrollar la confianza para comunicarse en situaciones cotidianas.</li>
+            <li>Proporcionar un entorno de aprendizaje amigable y motivador.</li>
+        </ul>
+    <button class="close-btn" onclick="ocultarCuadro('popupBeginners')">Cerrar</button>
+</div>
+
+</div>
+
+<div class="wsp-icon">
+    <a href="https://api.whatsapp.com/send?phone=51936823652&text=Hola%2C%20quiero%20informacion%20sobre%20JC%20Language%20Center!🤗" target="_blank">
+    <img src="img/image.png"></a>
+</div>
+
+<div class="resena" id="resena">
+    <h2>Reseñas</h2>
+</div>
+
+</div>
+<script src="script.js"></script>
+<script src="index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+</body>
+
+<footer class="footer">
+  <p class="slogan">Practice makes perfect!</p>
+  <p > &copy; 2024 JC Language Institute. Todos los derechos reservados.</p>
+</footer>
+</html>
